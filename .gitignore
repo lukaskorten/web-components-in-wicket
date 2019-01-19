@@ -1,9 +1,12 @@
-# Dependency directories
-node_modules/
 
-# Build direcories
+.idea
+.gradle
+*.iml
+
+node_modules/
 dist/
+build/
+out/
 
 # Mac config files
 .DS_Store
-
