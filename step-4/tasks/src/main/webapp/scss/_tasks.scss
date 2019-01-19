@@ -1,0 +1,72 @@
+.task-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+
+  > input[type=text] {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  > input[type=submit] {
+    flex: 0;
+  }
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+
+  > .list-item-icon {
+    color: fade_out($main-color, 0.2);
+  }
+
+  > .icon-btn {
+    opacity: 0;
+    margin-left: 10px;
+  }
+
+  &:hover {
+    > .icon-btn {
+      opacity: 1;
+    }
+  }
+
+}
+
+.list-item-icon {
+  @extend .fas;
+  @extend .fa-angle-right;
+  @extend .fa-stack;
+}
+
+.list-item-text {
+  flex: 1;
+
+  > small {
+    display: block;
+    font-size: 0.8em;
+    padding: 5px 0;
+    color: $font-color-faded;
+  }
+}
+
+.is-completed {
+
+  > .list-item-icon {
+    @extend .far;
+    @extend .fa-check-circle;
+    @extend .fa-stack;
+    color: $font-color-faded;
+  }
+
+  > .list-item-text {
+    color: lighten($font-color-faded, 10%);
+  }
+}
