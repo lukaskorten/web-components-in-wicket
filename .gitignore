@@ -59,3 +59,5 @@ typings/
 
 # next.js build output
 .next
+# Mac Os
+.DS_Store
