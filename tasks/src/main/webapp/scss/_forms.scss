@@ -1,0 +1,20 @@
+input {
+  padding: 14px 28px;
+  border-radius: 4px;
+
+  transition: all ease 250ms;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &[type=text] {
+    border: 2px solid $default-border-color;
+
+    &:focus {
+      border-color: darken($default-border-color, 10%);
+      outline: none;
+    }
+  }
+
+
+}

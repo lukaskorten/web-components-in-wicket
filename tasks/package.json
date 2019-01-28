@@ -1,0 +1,12 @@
+{
+    "name": "tasks",
+    "version": "1.0.0",
+    "dependencies": {
+        "moment": "^2.23.0"
+    },
+    "devDependencies": {
+        "node-sass": "^4.11.0",
+        "webpack": "^4.28.4",
+        "webpack-cli": "^3.2.1"
+    }
+}
